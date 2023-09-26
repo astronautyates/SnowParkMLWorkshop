@@ -19,9 +19,9 @@ services:
       # AIRFLOW_CONN_WEAVIATE_DEFAULT: '{"conn_type": "weaviate", "host": "http://weaviate:8081", "extra": {"X-OpenAI-Api-Key": "${OPENAI_APIKEY}"}}'
       AIRFLOW__CORE__ALLOWED_DESERIALIZATION_CLASSES: airflow\.* astro\.* include\.astro\.*
       AIRFLOW__CORE__TEST_CONNECTION: 'Enabled'
-  streamlit:
-    image: sissyg-streamlit:local
-    build: ./include/streamlit
+  #streamlit:
+   # image: sissyg-streamlit:local
+    #build: ./include/streamlit
     # command:
     # - python
     # - -m
